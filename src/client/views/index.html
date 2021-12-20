@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Travel App</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+</head>
+ <body>
+<div id = "app">
+  <div class ="holder headline">
+    <h1>Travel App</h1>
+  </div>
+  <div class ="holder zip">
+    <label for="zip">Enter City Name Here!!</label>
+    <input id="citytext" type="text" placeholder="enter city name here">
+  </div>
+  <div class ="holder feel">
+    <button type = "submit">Generate</button>
+    <button id = "remove" type = "submit">Remove Trip</button>
+  </div>
+   <div class ="holder data">
+    <label id ="data_label" for="data"> The data is the next one:
+      <div id="city_name">City:</div>
+      <div id="latitude">Latitude:</div>
+      <div id="longitude">Longitude:</div>
+      <div id="datetime">Datetime:</div>
+      <div id="app_temp">Temp:</div>
+      <div id="weather_description">Weather Descrirption:</div>
+    </label>
+    <div id ="main_image_div"><img id ="main_image" alt ="img" src="https://tailoredspain.com/wp-content/uploads/2015/03/traveling.png"></div>
+  </div>
+  
+<footer></footer>
+
+<script>
+  // Check that service workers are supported
+  /*if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js');
+      });
+  }*/
+ </script>
+</body>
+</html>
