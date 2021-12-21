@@ -1,3 +1,5 @@
+/*The postData function send a request to the server for taking a response with the necessary data. When it recieve the data, the setData function set it on the interface of the webpage. */
+
 async function postData(){
     let response = await fetch("http://localhost:8091/posts1", {
     method: 'POST',
