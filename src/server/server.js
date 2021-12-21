@@ -21,6 +21,7 @@ app.use(bodyParser.json());
 // Cors for cross origin allowance
 const cors = require('cors');
 app.use(cors());
+app.use(express.static('dist'));
 // Initialize the main project folder
 const apiKey = process.env.API_KEY_1;
 const apiKey2 = process.env.API_KEY_2;
